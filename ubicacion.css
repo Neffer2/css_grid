@@ -87,8 +87,8 @@
 
 /* pruebas */
 .container_prueba {
-    border: 5px solid pink;
-    background-color: aliceblue;
+    /*border: 5px solid pink;*/ 
+    /*background-color: aliceblue;*/
     display: grid;
     grid-template-columns: 70px 70px 70px;
     grid-template-rows: 70px 70px 70px;
@@ -96,7 +96,7 @@
     gap: 5px;
 }
 
-.item1-prueba {
+.item1-prueba { 
     border: 5px solid pink;
     background-color: aliceblue;
 }
