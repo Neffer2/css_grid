@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    border: 5px solid cyan;
+    background-color: ghostwhite;
+    display: grid;
+    grid-template-columns: 80px 80px 80px;
+    /* grid-template-rows: 50px 90px; */
+
+    /* grid-auto-columns: 80px; */
+    grid-auto-rows: 80px;
+    /* --- */
+    grid-auto-flow: row;
+    /* grid-auto-flow - Cuando el contnido no cabe en la grilla:
+    * Row: crea nuevas filas. NOTA: Las columnas filas, toman un valor atomático si no hay medidas suficientes en grid-template-rows
+    * Column: crea nuevas columnas. NOTA: Las columnas nuevas, toman un valor atomático si no hay medidas suficientes en grid-template-columns 
+    * dense: Ubica elementos en culaquier sitio disponible
+    */
+    gap: 10px;  /*Espacio entre filas y columnas*/
+    height: 300px;
+    /* justify-content: center;
+    align-content: center; */
+    place-content: start;
+    justify-items: end;
+    align-items: start;
+}
+
+.item {
+    border: 5px solid blueviolet;
+    background-color: ghostwhite;
+    /* font-size: 4rem; */
+    text-align: center;
+}
+
+.item-2 {
+    justify-self: center;
+    align-self: end;
+}
+
+/* practica */
+
+.practica {
+    border: 5px solid purple;
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-auto-flow: column;
+    grid-auto-columns: 100px;
+    gap: 15px;
+}
+
+.item-practica {
+    border: 5px solid blue;
+    background-color: greenyellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.item-practica h3 {
+    margin: 0;
+    height: 2.3rem;
+    width: 2rem;
+    font-size: 32px;
+    background-color: green;
+    text-align: center;
+    color: white;
+}
+
+/* Aling práctica */
+
+.alineacion-practica {
+    background-color: green;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 120px 120px;
+    grid-template-rows: 120px 120px;
+    place-content: center;
+    place-items: end;
+    gap: 10px;
+}
+
+.item-practica-aling {
+    background-color: greenyellow;
+}

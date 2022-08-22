@@ -1,0 +1,136 @@
+.container {
+    border: 5px solid pink;
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: 70px 70px 70px;
+    grid-template-rows: 70px 70px 70px;
+    place-content: center;
+}
+
+.item {
+    font-size: 4rem;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.item1 {
+    border: 5px solid pink;
+    background-color: aliceblue;
+
+    /* combinan columnas contando lineas */
+    grid-column-start: 1; 
+    grid-column-end: 4;
+}
+
+.item2 {
+    border: 5px solid green;
+    background-color: greenyellow;
+
+    /* combinan filas contando lineas */
+    /* 
+    grid-row-start: 2;
+    grid-row-end: 4;
+    */
+
+    /* combinan columnas contando lineas */
+    /*
+    grid-column-start: 1;
+    grid-column-end: 3;
+    */
+
+    /* grid area, lo mismo que los de arriba pero en una sola linea */
+    /* inicio fila, inicio columna, final fila, final columna */
+    grid-area: 2 / 1 / 4 / 3;
+}
+
+.item3 {
+    border: 5px solid aqua;
+    background-color: aquamarine;
+
+    /* combinan filas contando lineas */
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+
+/* grid-template-areas */
+.container_areas {
+    border: 5px solid pink;
+    background-color: aliceblue;
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main main side"
+    "main main side";
+    grid-template-columns: 70px 70px 70px;
+    grid-template-rows: 70px 70px 70px;
+    place-content: center;
+}
+
+.item1-areas {
+    border: 5px solid pink;
+    background-color: aliceblue;
+    grid-area: header;
+}
+
+.item2-areas {
+    border: 5px solid green;
+    background-color: greenyellow;
+    grid-area: main;
+}
+
+.item3-areas {
+    border: 5px solid aqua;
+    background-color: aquamarine;
+    grid-area: side;
+}
+
+/* pruebas */
+.container_prueba {
+    border: 5px solid pink;
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: 70px 70px 70px;
+    grid-template-rows: 70px 70px 70px;
+    place-content: center;
+    gap: 5px;
+}
+
+.item1-prueba {
+    border: 5px solid pink;
+    background-color: aliceblue;
+}
+
+.item2-prueba {
+    border: 5px solid green;
+    background-color: greenyellow;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.item3-prueba {
+    border: 5px solid aqua;
+    background-color: aquamarine;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.item4-prueba {
+    border: 5px solid green;
+    background-color: greenyellow;
+}
+
+.item5-prueba {
+    border: 5px solid aqua;
+    background-color: aquamarine;
+}
+
+.item6-prueba {
+    border: 5px solid green;
+    background-color: greenyellow;
+}
+
+.item7-prueba {
+    border: 5px solid pink;
+    background-color: aliceblue;
+}
